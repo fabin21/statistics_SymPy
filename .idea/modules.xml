@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SymPy_GustavoPereira_repositorys_version.iml" filepath="$PROJECT_DIR$/.idea/SymPy_GustavoPereira_repositorys_version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/StatisticsSymPy.iml" filepath="$PROJECT_DIR$/.idea/StatisticsSymPy.iml" />
     </modules>
   </component>
 </project>

@@ -30,7 +30,6 @@ def subtracting_Value_from_vector(x: sp.Matrix, value: sp.Symbol):
 def vectorsPower(x: sp.matrices.Matrix, n: sp.Symbol):
     y = list()
     for xi in x:
-        print(xi)
         y.append(power_operating(xi, n))
     y = sp.Matrix(y)
     return y

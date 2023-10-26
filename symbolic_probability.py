@@ -36,8 +36,8 @@ def central_momentum(variable, centralmomentums_order):
     x = variable.ValuesMatrice
     Ex = momentum(variable = variable, momentums_order = 1)
 
-    def subtracting_Ex(vector):
-        return vector - Ex
+    def subtracting_Ex(number):
+        return number - Ex
 
     dx = SymPy_Apply(x, subtracting_Ex)
 
@@ -45,7 +45,10 @@ def central_momentum(variable, centralmomentums_order):
     p = variable.ProbabilitysMatrice
     dx_n = vectorsPower(dx, n)
 
-    return dx_n.dot(p)
+    E_dx2 = dx_n.dot(p)
+    E_dx2 = sp.simplify(E_dx2)
+
+    return E_dx2
 
 
 X = BernoulliVariable()
